@@ -1,0 +1,4 @@
+Model,ROC_AUC,PR_AUC,Recall_at_Top_Decile_Pct
+XGBoost (Champion),0.9473,0.2989,87.5
+Logistic Regression (Baseline),0.9526,0.2973,89.88
+Random Forest (Alternative),0.9445,0.2874,84.52

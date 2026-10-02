@@ -1,0 +1,136 @@
+======================================================================
+JIO SUBSCRIBER CHURN INTELLIGENCE - COMPREHENSIVE EDA REPORT
+======================================================================
+Generated: 2026-09-21 22:23:31
+Rows: 64,738 | Columns: 43
+
+----------------------------------------------------------------------
+1. TARGET VARIABLE (churn_flag_30d)
+----------------------------------------------------------------------
+Churned: 1,122 (1.73%)
+Retained: 63,616 (98.27%)
+Imbalance ratio (retained:churned): 56.7 : 1
+
+----------------------------------------------------------------------
+2. NUMERIC VARIABLE SUMMARY
+----------------------------------------------------------------------
+tenure_months: mean=32.3965, median=27.0, std=22.0221, min=1.0, max=119.0, missing=0 (0.0%)
+plan_price_inr: mean=443.8345, median=299.0, std=465.1367, min=155.0, max=3599.0, missing=0 (0.0%)
+plan_validity_days: mean=68.0162, median=30.0, std=88.1279, min=28.0, max=365.0, missing=0 (0.0%)
+arpu_last_month_inr: mean=213.6999, median=188.45, std=110.9134, min=75.99, max=1343.8, missing=0 (0.0%)
+arpu_3m_avg_inr: mean=213.7315, median=187.83, std=112.6511, min=78.0, max=1500.0, missing=0 (0.0%)
+arpu_6m_avg_inr: mean=213.7889, median=186.85, std=114.7785, min=75.0, max=1475.14, missing=0 (0.0%)
+recharge_count_6m: mean=4.6928, median=5.0, std=2.29, min=0.0, max=11.0, missing=0 (0.0%)
+avg_recharge_gap_days: mean=70.1067, median=36.7, std=88.4893, min=6.0, max=400.0, missing=0 (0.0%)
+days_since_last_recharge: mean=42.1646, median=25.0, std=49.1124, min=0.0, max=210.0, missing=0 (0.0%)
+payment_failures_6m: mean=0.3969, median=0.0, std=0.6627, min=0.0, max=6.0, missing=0 (0.0%)
+data_gb_last_month: mean=40.7, median=31.6, std=32.8213, min=0.46, max=451.4, missing=0 (0.0%)
+data_gb_3m_avg: mean=40.6658, median=31.08, std=33.7947, min=0.3, max=480.0, missing=0 (0.0%)
+voice_minutes_last_month: mean=342.9475, median=301.0, std=206.0016, min=7.0, max=1971.0, missing=0 (0.0%)
+sms_count_last_month: mean=11.4806, median=11.0, std=3.6811, min=0.0, max=30.0, missing=0 (0.0%)
+avg_sinr_db: mean=13.3356, median=13.3, std=4.625, min=-4.0, max=30.0, missing=0 (0.0%)
+drop_call_rate_pct: mean=0.6537, median=0.53, std=0.498, min=0.01, max=5.31, missing=0 (0.0%)
+site_congestion_score: mean=33.4195, median=30.9, std=17.9745, min=1.0, max=99.0, missing=0 (0.0%)
+complaints_6m: mean=0.6495, median=0.0, std=0.815, min=0.0, max=7.0, missing=0 (0.0%)
+unresolved_complaints: mean=0.1731, median=0.0, std=0.4155, min=0.0, max=5.0, missing=0 (0.0%)
+avg_resolution_days: mean=2.1803, median=0.0, std=3.2183, min=0.0, max=34.9, missing=0 (0.0%)
+num_services: mean=1.4849, median=1.0, std=0.6367, min=1.0, max=4.0, missing=0 (0.0%)
+app_logins_30d: mean=5.795, median=5.0, std=4.5927, min=0.0, max=32.0, missing=0 (0.0%)
+outgoing_to_competitor_pct: mean=28.2466, median=26.4, std=15.1806, min=0.1, max=88.2, missing=0 (0.0%)
+
+----------------------------------------------------------------------
+3. CATEGORICAL VARIABLE SUMMARY
+----------------------------------------------------------------------
+circle: unique=22, top='Uttar Pradesh East' (8.803%), missing=0 (0.0%)
+circle_code: unique=22, top='UPE' (8.803%), missing=0 (0.0%)
+zone: unique=4, top='North' (38.284%), missing=0 (0.0%)
+plan_type: unique=2, top='Prepaid' (88.228%), missing=0 (0.0%)
+device_brand: unique=11, top='Xiaomi' (16.519%), missing=0 (0.0%)
+home_product: unique=2, top='JioFiber' (6.074%), missing=57938 (89.496%)
+churn_reason: unique=7, top='Competitor offer / price' (1.682%), missing=61497 (94.994%)
+
+----------------------------------------------------------------------
+4. BOOLEAN VARIABLE SUMMARY
+----------------------------------------------------------------------
+autopay_enabled: True=24.094%, False=75.906%, missing=0
+is_5g_device: True=51.142%, False=48.858%, missing=0
+is_5g_active: True=40.571%, False=59.429%, missing=0
+family_plan_flag: True=15.229%, False=84.771%, missing=0
+roaming_user_flag: True=8.658%, False=91.342%, missing=0
+offer_exposed_90d: True=21.612%, False=78.388%, missing=0
+offer_redeemed_90d: True=8.023%, False=91.977%, missing=0
+mnp_enquiry_flag: True=5.19%, False=94.81%, missing=0
+churn_flag_30d: True=1.733%, False=98.267%, missing=0
+churn_flag_90d: True=5.006%, False=94.994%, missing=0
+
+----------------------------------------------------------------------
+5. SEGMENT CHURN RATES (top 8 per segment)
+----------------------------------------------------------------------
+[circle]
+   - Uttar Pradesh East: 2.77% (n=5,699)
+   - Madhya Pradesh & Chhattisgarh: 2.49% (n=4,384)
+   - Bihar & Jharkhand: 2.44% (n=4,788)
+   - Uttar Pradesh West: 2.40% (n=3,672)
+   - Assam: 2.37% (n=1,179)
+   - Haryana: 1.98% (n=1,922)
+   - Punjab: 1.93% (n=2,018)
+   - Odisha: 1.75% (n=2,055)
+
+[zone]
+   - North: 2.13% (n=24,784)
+   - East: 1.97% (n=13,308)
+   - South: 1.27% (n=15,466)
+   - West: 1.21% (n=11,180)
+
+[plan_type]
+   - Prepaid: 1.93% (n=57,117)
+   - Postpaid: 0.22% (n=7,621)
+
+[device_brand]
+   - Tecno: 2.46% (n=1,303)
+   - Motorola: 2.01% (n=2,931)
+   - vivo: 1.89% (n=10,082)
+   - JioBharat / JioPhone: 1.79% (n=6,105)
+   - POCO: 1.78% (n=3,260)
+   - Apple: 1.73% (n=3,929)
+   - OnePlus: 1.71% (n=2,344)
+   - Xiaomi: 1.67% (n=10,694)
+
+[autopay_enabled]
+   - False: 2.03% (n=49,140)
+   - True: 0.79% (n=15,598)
+
+[family_plan_flag]
+   - False: 1.80% (n=54,879)
+   - True: 1.37% (n=9,859)
+
+[is_5g_active]
+   - False: 2.14% (n=38,473)
+   - True: 1.14% (n=26,265)
+
+[roaming_user_flag]
+   - True: 1.94% (n=5,605)
+   - False: 1.71% (n=59,133)
+
+----------------------------------------------------------------------
+6. TOP NUMERIC CORRELATIONS WITH CHURN
+----------------------------------------------------------------------
+   - days_since_last_recharge: r = 0.224
+   - avg_recharge_gap_days: r = 0.216
+   - plan_validity_days: r = 0.214
+   - recharge_count_6m: r = -0.137
+   - payment_failures_6m: r = 0.094
+   - unresolved_complaints: r = 0.081
+   - app_logins_30d: r = -0.076
+   - arpu_last_month_inr: r = -0.073
+   - arpu_3m_avg_inr: r = -0.070
+   - arpu_6m_avg_inr: r = -0.069
+
+----------------------------------------------------------------------
+7. KEY FINDINGS
+----------------------------------------------------------------------
+1. Dataset covers 64,738 subscribers with a baseline 30-day churn rate of 1.73% (1,122 churned vs. 63,616 retained), an imbalance of roughly 1 churner per 57 retained subscribers.
+2. 'Uttar Pradesh East' circle shows the highest churn concentration at 2.8%, making it the top-priority region for retention campaigns.
+3. Churn risk accelerates sharply once the recharge gap reaches the '90+'-day band, marking the 'silent churn' threshold for proactive outreach.
+4. The '<150' INR ARPU bracket has the highest churn rate at 3.2%, pointing to pricing/value-perception risk in that tier.
+5. 'days_since_last_recharge' is the numeric feature most correlated with churn (r = 0.22), flagging it as a strong candidate signal for the predictive model.

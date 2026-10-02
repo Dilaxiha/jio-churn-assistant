@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment
+.venv/
+venv/
+
+# Streamlit
+.streamlit/
+
+# Generated SQLite database (rebuild with Python_Scripts/build_database.py)
+Data/jio_retention.db
+
+# Logs
+output.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/

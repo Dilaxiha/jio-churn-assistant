@@ -1,0 +1,38 @@
+============================================================
+JIO RETENTION - INITIAL EDA & DATA QUALITY REPORT
+============================================================
+
+1. DATASET SHAPE
+   - Total Rows (Subscribers): 64738
+   - Total Columns: 43
+
+2. DUPLICATE CHECK
+   - Duplicate rows found: 0
+
+3. MISSING VALUES PER COLUMN
+   - home_product: 57938 missing (89.50%)
+   - churn_reason: 61497 missing (94.99%)
+   - churn_date: 61497 missing (94.99%)
+
+4. DATA TYPES SUMMARY
+   - int64: 12 columns
+   - float64: 11 columns
+   - str: 10 columns
+   - bool: 10 columns
+
+5. KEY NUMERIC STATISTICS
+       arpu_last_month_inr  ...  data_gb_last_month
+count         64738.000000  ...        64738.000000
+mean            213.699898  ...           40.699990
+std             110.913385  ...           32.821311
+min              75.990000  ...            0.460000
+25%             137.662500  ...           18.150000
+50%             188.450000  ...           31.600000
+75%             260.005000  ...           53.300000
+max            1343.800000  ...          451.400000
+
+[8 rows x 5 columns]
+
+6. TARGET VARIABLE DISTRIBUTION (churn_flag_30d)
+   - False: 63616 subscribers (98.27%)
+   - True: 1122 subscribers (1.73%)

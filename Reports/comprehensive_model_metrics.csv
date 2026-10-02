@@ -1,0 +1,4 @@
+Model,ROC_AUC,PR_AUC,Accuracy,Precision,Recall,Overfitting_Gap,Recall_at_Top_Decile_Pct,Optimal_Threshold
+XGBoost (Champion),0.9473,0.2989,0.966,0.2811,0.619,0.0126,87.5,0.8389
+Logistic Regression (Baseline),0.9526,0.2973,0.9685,0.3073,0.6548,-0.006,89.88,0.8945
+Random Forest (Alternative),0.9445,0.2874,0.9612,0.2587,0.6667,0.0385,84.52,0.3281
